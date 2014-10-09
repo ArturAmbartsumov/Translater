@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.artur.translater.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChooseLanguage"
+            android:id="@+id/language1Button"
+            android:layout_gravity="left|top"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/swapButton"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/Swap"
+            android:layout_gravity="center"
+            android:layout_weight="1.5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChooseLanguage"
+            android:id="@+id/language2Button"
+            android:layout_gravity="right|top"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/originText"
+        android:layout_gravity="center"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:phoneNumber="false"
+        android:layout_margin="15dp"
+        android:padding="15dp" />
+
+</LinearLayout>

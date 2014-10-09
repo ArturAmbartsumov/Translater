@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.artur.translater.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Translate"
+        android:id="@+id/translateButton"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="15dp"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/translatedTextView"
+        android:textAlignment="center"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_margin="15dp"
+        android:padding="15dp" />
+</LinearLayout>

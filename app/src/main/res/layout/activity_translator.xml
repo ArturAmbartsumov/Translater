@@ -1,0 +1,26 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1"
+    android:id="@+id/translatorLayout">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.artur.translater.FirstFragment"
+        android:id="@+id/firstFragment"
+        android:layout_gravity="center_horizontal"
+        tools:layout="@layout/fragment_first"
+        android:layout_weight="0.5" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.artur.translater.SecondFragment"
+        android:id="@+id/secondFragment"
+        android:layout_gravity="center_horizontal"
+        tools:layout="@layout/fragment_second"
+        android:layout_weight="0.5" />
+</LinearLayout>
